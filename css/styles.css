@@ -1,0 +1,470 @@
+html, body{
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+*{
+  box-sizing: border-box;
+}
+.container-height{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.container-width{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+header{
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 75px;
+  background-color: rgb(255,255,255);
+  z-index: 1;
+  line-height: 75px;
+}
+.olufemi-logo{
+  color: rgb(33,33,33);
+  float: left;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 40px;
+  transition: 0.5s;
+  z-index: 1000;
+  display: block;
+  position: absolute;
+}
+.olufemi-logo:hover{
+  color: rgb(66,66,150);
+  background-image: url(../images/el-perfecto.png);
+  background-size: 25px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: -100%;
+  left: 0%;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay.open {
+  top: 0;
+}
+.nav-links{
+  position: relative;
+  top: 25%;
+  text-align: center;
+  margin-top: 30px;
+}
+.nav-links a{
+  display: block;
+}
+.overlay a{
+  padding: 8px;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #818181;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus{
+  color: #f1f1f1;
+}
+.closebtn{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.mobile-nav{
+  display: inline;
+  position: fixed;
+  right: 5%;
+  color: rgb(33,33,33);
+  background-color: rgba(255,255,255,0.9);
+  padding: 10px;
+  line-height: 50px;
+  margin-top: 12.5px;
+}
+.mobile-nav:hover{
+  color: rgb(66,66,150);
+  background-color: rgba(255,255,255,0.75)
+}
+
+.hero{
+  background-color: rgb(230,230,230);
+}
+.hero-background{
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-image: url(../images/hero-image-01.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hero-content{
+  position: absolute;
+  bottom: 0;
+  margin: 0 5%;
+}
+.hero h1{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 3em;
+  color: rgb(33,33,33);
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.about-btn{
+  display: block;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-btn a{
+  color: rgb(255,255,255);
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: lowercase;
+  background-color: rgb(66,66,150);
+  padding: 20px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+section h2{
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(255,255,255);
+}
+.strike{
+  text-decoration: line-through;
+}
+.about-olufemi{
+  display: block;
+  position: relative;
+  height: auto;
+  background-color: rgb(66,66,150);
+  padding: 25px 0;
+}
+.about-olufemi p{
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  color: rgb(255,255,255);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-olufemi a{
+  color: rgb(255,255,255);
+  border-bottom: 2px solid;
+}
+
+.about-skills div{
+  height: auto;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.about-skills img{
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.about-skills h3{
+  color: rgb(255,255,255);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.portfolio{
+  display: block;
+  position: relative;
+  background-color: rgb(33,33,33);
+  padding: 40px 0;
+  clear: both;
+}
+.portfolio-content div{
+  background-color: rgb(255,255,255);
+  height: 200px;
+  margin: 20px 0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+}
+.portfolio-content #livingseed{
+  background-image: url(../images/portfolio/livingseed-hover.svg);
+}
+.portfolio-content #ifemed{
+  background-image: url(../images/portfolio/ifemed-hover.svg);
+}
+.portfolio-content #tedxife{
+  background-image: url(../images/portfolio/tedxife-hover.svg);
+}
+.portfolio-content #renegade{
+  background-image: url(../images/portfolio/renegade.svg);
+}
+.portfolio-content #livingseed:hover{
+  background-color: rgb(255,255,255);
+  border: solid 4px;
+  border-color: rgb(66,66,150);
+  border-radius: 4px;
+  background-image: url(../images/portfolio/livingseed-hover.svg);
+}
+.portfolio-content #ifemed:hover{
+  background-color: rgb(255,255,255);
+  border: solid 4px;
+  border-color: rgb(66,66,150);
+  border-radius: 4px;
+  background-image: url(../images/portfolio/ifemed-hover.svg);
+}
+.portfolio-content #tedxife:hover{
+  background-color: rgb(255,255,255);
+  border: solid 4px;
+  border-color: rgb(66,66,150);
+  border-radius: 4px;
+  background-image: url(../images/portfolio/tedxife-hover.svg);
+}
+.portfolio-content #renegade:hover{
+  background-color: rgb(255,255,255);
+  border: solid 4px;
+  border-color: rgb(66,66,150);
+  border-radius: 4px;
+  background-image: url(../images/portfolio/renegade.svg);
+}
+.portfolio p{
+  color: rgb(255,255,255);
+  font-size: 16px;
+  text-align: right;
+}
+.portfolio p a{
+  color: rgb(255,255,255);
+  border-bottom: 2px solid;
+}
+.contact-olufemi{
+  background-color: rgb(66,66,150);
+  display: block;
+  position: relative;
+  padding: 25px 0;
+}
+.contact-olufemi p{
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(255,255,255);
+  line-height: 1.5;
+  padding: 10px 0;
+}
+.contact-olufemi p a{
+  color: rgb(255,255,255);
+  border-bottom: 2px solid;
+}
+.contact-olufemi p a:hover{
+  color: rgb(33,33,33);
+}
+
+.social-icons{
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.social-icons a{
+  color: rgb(66,66,150);
+  font-size: 32px;
+  margin: 20px;
+  width: 52px;
+  height: auto;
+  padding: 10px 0;
+  border-radius: 50%;
+  background-color: rgb(255,255,255);
+  display: inline-block;
+}
+.social-icons a:hover{
+  background-color: rgb(220,220,220);
+}
+.fa-twitter:hover{
+  color: rgb(29,161,242);
+}
+.fa-instagram:hover{
+  color: rgb(220,0,200);
+}
+.fa-behance:hover{
+  color: rgb(33,33,33);
+}
+.fa-linkedin:hover{
+  color: rgb(0,111,166);
+}
+footer{
+  background-color: white;
+  display: block;
+  position: relative;
+  height: 75px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+footer p{
+  font-size: 16px ;
+  text-align: right;
+  height: 75px;
+  line-height: 75px;
+}
+.olufemi-copyright{
+  float: left;
+  display: inline-block;
+}
+.footer-mail{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer-mail a:hover{
+  color: rgb(66,66,150);
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+}
+footer img{
+  width: auto;
+  height: 45px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+
+/*media query styles */
+@media only screen and (max-width: 20em){
+  .hero-background{
+    visibility: hidden;
+  }
+  .hero-content{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+  }
+  .hero-content span{
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 40em){
+  .hero-background{
+    background-size: 125%;
+  }
+  .hero h1{
+    font-size: 2.5em;
+    margin-bottom: 25px;
+  }
+  .social-icons a{
+    margin: 2%;
+  }
+  .olufemi-copyright, footer img{
+    display: none;
+  }
+  
+}
+@media only screen and (orientation: landscape) and (max-width: 40em){
+  .hero-background{
+    visibility: hidden;
+  }
+  .about-btn{
+    display: block;
+  }
+}
+@media only screen and (min-width: 40em){
+    .overlay{
+      top: 0;
+      background: none;
+      position: relative;
+      display: inline;
+    }
+    .closebtn, .mobile-nav{
+      display: none;
+      visibility: collapse;
+    }
+    .nav-links{
+      top: 0;
+      margin: 0;
+      text-align: right;
+      line-height: 75px;
+    }
+    .nav-links a{
+      display: inline;
+      color: rgb(33,33,33);
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 20px;
+      padding: 5px 10px;
+      border: 2px solid;
+      border-color: rgb(33,33,33);
+    }
+    .nav-links a:hover{
+    background-color: rgb(66,66,150);
+    color: rgb(255,255,255);
+    }
+    .nav-links a:first-of-type{
+      display: none;
+    }
+  .hero h1{
+    margin-bottom: 50px;
+  }
+  .about-btn{
+    display: none;
+  }
+  .about-olufemi p{
+    display: inline-block;
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+  }
+  .about-skills div{
+    width: 23%;
+    display: inline-block;
+    margin-left: 1%;
+  }
+  .about-skills img{
+    width: 100%;
+  }
+  .portfolio-content div{
+    width: 48%;
+    float: left;
+    margin: 1%;
+  } 
+  
+  .portfolio-content div{
+    background-color: rgba(0,0,0,0.7);
+  }
+  .portfolio-content #livingseed{
+  background-image: url(../images/portfolio/livingseed.svg);
+}
+.portfolio-content #ifemed{
+  background-image: url(../images/portfolio/ifemed.svg);
+}
+.portfolio-content #tedxife{
+  background-image: url(../images/portfolio/tedxife.svg);
+}
+  .contact-olufemi p{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
