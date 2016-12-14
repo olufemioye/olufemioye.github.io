@@ -6,10 +6,6 @@ html, body{
 *{
   box-sizing: border-box;
 }
-.container-height{
-  top: 50%;
-  transform: translateY(-50%);
-}
 .container-width{
   position: relative;
   width: 90%;
@@ -36,12 +32,19 @@ header{
   z-index: 1000;
   display: block;
   position: absolute;
+  padding-left: 60px;
+  background-image: url(../images/olufemi-logo.png);
+  background-size: 50px;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 .olufemi-logo:hover{
   color: rgb(66,66,150);
+/*
   background-image: url(../images/el-perfecto.png);
   background-size: 25px;
   background-position: right;
+*/
   background-repeat: no-repeat;
 }
 
@@ -186,8 +189,10 @@ section h2{
 }
 .about-skills img{
   width: 80%;
-  margin-left: 50%;
-  transform: translateX(-50%);
+  display: inline-block;
+  text-align: center;
+/*  margin-left: 50%;*/
+/*  transform: translateX(-50%);*/
 }
 .about-skills h3{
   color: rgb(255,255,255);
