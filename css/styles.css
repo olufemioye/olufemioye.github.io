@@ -33,7 +33,7 @@ header{
   display: block;
   position: absolute;
   padding-left: 60px;
-  background-image: url(../images/olufemi-logo.png);
+  background-image: url(../images/olufemi-logo.svg);
   background-size: 50px;
   background-position: left;
   background-repeat: no-repeat;
@@ -44,8 +44,9 @@ header{
   background-image: url(../images/el-perfecto.png);
   background-size: 25px;
   background-position: right;
-*/
   background-repeat: no-repeat;
+*/
+  background-image: url(../images/olufemi-logo-hover.svg);
 }
 
 .overlay{
