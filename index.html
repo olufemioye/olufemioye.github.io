@@ -1,127 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <title>Olufemi Oye | Creative Designer from Nigeria</title>
-  <meta name="author" content="Olufemi" />
-  <meta name="description" content="graphics designer and web designer based in Lagos, Ibadan Nigeria" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="text/css" rel="stylesheet" href="css/reset.css" />
-
-  <!--    FAVICON-->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  
-  
-  <script src="https://use.fontawesome.com/1e49d249b3.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans" rel="stylesheet" />
-  <link type="text/css" rel="stylesheet" href="css/styles.css" />
-  <!-- Google Analytics -->
-  <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-81704864-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#168489">
+	<title>Olufemi Oye | Front-End Developer and UI Designer</title>
+	<link rel="icon" href="favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
 </head>
-
+<style>
+	html{padding:0;margin:0;border:0;}
+	body{padding:0;margin:0;border:0;color: #333e51;font-family: 'Montserrat',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;background:white;}
+	main > div{
+		display: block;
+		padding: 60px 30px;
+	}
+	img{
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;
+		display: inline-block;
+		margin: 0 0 15px;
+	}
+	h1{
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 30px;
+		margin: 0 0 20px;
+	}
+	p{
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 26px;
+		margin: 0 0 30px;
+	}
+	span{
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+	.mail{
+		display: inline-block;
+		position: relative;
+		color: inherit;
+		text-decoration: none;
+		padding: 0 3px;
+		margin-right: 2px;
+		z-index: 1;
+	}
+	.mail::after{
+		content: '';
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: #168489;
+		z-index: -1;
+		transition: ease .3s;
+	}
+	.mail:hover{
+		color: white;
+		transition: color ease .3s;
+	}
+	.mail:hover::after{
+		height: 100%;
+	}
+	.social a{
+		text-decoration: none;
+		display: inline-block;
+		margin-right: 20px;
+	}
+	.social a>svg{
+		height: 25px;
+		width: auto;
+		fill: #333e51;
+	}
+	.social a:hover svg,
+	.social a:focus svg{
+		fill: #168489;
+	}
+	@media (max-width: 767px) {
+		h1{font-weight: 500}
+		p{font-weight:400;}
+	}
+	@media (min-width: 567px) {
+		main>div{
+			padding: 80px 60px;
+		}
+	}
+	@media (min-width: 768px) {
+		main>div{
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 100px 60px;
+		}
+		img{
+			height: 110px;
+			width: 110px;
+		}
+	}
+</style>
 <body>
-  <header>
-    <nav class="container-width">
-      <a href="#" class="olufemi-logo">
-        Olufemi Oye
-      </a>
-      <div id="nav-bar" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
-        <div class="nav-links">
-          <a href="#" onclick="closeNav()">Home</a>
-          <a href="#about" onclick="closeNav()">About</a>
-          <a href="#portfolio" onclick="closeNav()">Portfolio</a>
-          <a href="#contact" onclick="closeNav()">Contact</a>
-        </div>
-      </div>
-      <span style="font-size:30px; cursor:pointer" onclick="openNav()" class="mobile-nav fa-bars fa"></span>
-    </nav>
-  </header>
-  <section class="hero">
-    <div class="hero-background"></div>
-    <div class="hero-content container-width">
-      <h1>Creative Designer from Nigeria</h1>
-      <span class="about-btn">
-        <a href="#about">more about olufemi</a>
-      </span>
-    </div>
-  </section>
-  <section id="about" class="about-olufemi">
-    <div class="container-width">
-      <h2>About Me</h2>
-      <p>Hello my name is Olufemi Oye, I'm a 22 year old Graphics, web designer <span class="strike">and Chemical Engineer</span> based in Nigeria. I started <span class="strike">playing around</span> with graphics since 2012 and I started to code <span class="strike">somewhat</span> around 2015. I use Illustrator, Photoshop and Indesign fluently. I write my code in html and css, and I continue to learn Javascript. I started freelance work in 2015 and have done branding, print design, interface design, mockups and websites for various clients. Check out some of my featured work below.</p>
-
-      <div class="about-skills">
-        <div class="graphics">
-          <img src="images/graphics-design.png" />
-          <h3>Graphics Designer</h3>
-        </div>
-        <div class="web">
-          <img src="images/web-design.png" />
-          <h3>Web Designer</h3>
-        </div>
-      </div>
-      <div style="clear: both"></div>
-    </div>
-
-  </section>
-  <section id="portfolio" class="portfolio">
-    <div class="container-width">
-      <h2>Stuffs I've Done</h2>
-      <div class="portfolio-content">
-        <a href="https://www.behance.net/gallery/41094507/LIVINGSEED" target="_blank">
-          <div id="livingseed"></div>
-        </a>
-        <a href="https://www.behance.net/gallery/41093599/IFEMED" target="_blank">
-          <div id="ifemed"></div>
-        </a>
-        <a href="https://www.behance.net/gallery/34711389/TEDxIfe-2015-Graphics-Design" target="_blank">
-          <div id="tedxife"></div>
-        </a>
-        <a href="https://www.behance.net/gallery/41095369/RENEGADE" target="_blank">
-          <div id="renegade"></div>
-        </a>
-
-      </div>
-      <p>Check more of my work <a href="https://www.behance.net/OlufemiOye">here</a></p>
-    </div>
-  </section>
-  <section id="contact" class="contact-olufemi">
-    <div class="container-width">
-      <h2>Say Hello</h2>
-      <p>You can <a href="mailto:olufemi.oye@gmail.com">send me a mail</a> for work or shoutouts. or find me on social media</p>
-      <span class="social-icons"> 
-        <a class="fa fa-twitter" href="https://twitter.com/olufemioye" target="_blank"></a>
-        <a class="fa fa-instagram" href="https://www.instagram.com/olufemioye" target="_blank"></a>
-        <a class="fa fa-behance" href="https://www.behance.net/OlufemiOye" target="_blank"></a>
-        <a class="fa fa-linkedin" href="https://www.linkedin.com/in/olufemioye" target="_blank"></a>
-        
-      </span>
-      <p>This website was created in July 2016. It was built with Html, css and JavaScript. Fonts used are Montserrat, Open Sans and font-awesome.</p>
-    </div>
-  </section>
-  <footer>
-    <div class="container-center container-width">
-      <p class="olufemi-copyright">@2016 Olufemi Oye</p>
-      <p class="footer-mail">
-        <a href="mailto:olufemi.oye@gmail.com">olufemi.oye@gmail.com</a>
-      </p>
-      <p>
-        <img class="olufemi-sign" src="images/signature.png" />
-      </p>
-    </div>
-  </footer>
-  <script src="script/main.js"></script>
+<main>
+	<div>
+		<span>
+			<img src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QMfaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzEzOCA3OS4xNTk4MjQsIDIwMTYvMDkvMTQtMDE6MDk6MDEgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk4RERFNEYxQ0M5RTExRTc4OEZFQ0ZFQjQ1OTM3RUQ2IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk4RERFNEYwQ0M5RTExRTc4OEZFQ0ZFQjQ1OTM3RUQ2IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE3IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSI5NTIyNkU0NUU5N0Q4QzAzNDBCRERDMTJERTBGODIxOCIgc3RSZWY6ZG9jdW1lbnRJRD0iOTUyMjZFNDVFOTdEOEMwMzQwQkREQzEyREUwRjgyMTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAAGBAQEBQQGBQUGCQYFBgkLCAYGCAsMCgoLCgoMEAwM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" alt="Olufemi Oye">
+		</span>
+		<h1>Hello, my name is Olufemi Oye, I’m a Frontend Developer based in Lagos.</h1>
+		<p>
+			Designing Interfaces and Writing Code that supports them is my forte’
+			<br>
+			A more comprehensive website is in the works :)
+			<br><br>
+			You can contact me via <a href="mailto:olufemi.oye@gmail.com" target="_blank" class="mail">mail</a>.
+			<br>
+			Stay in touch.
+		</p>
+		<div class="social">
+			<a href="https://www.twitter.com/olufemioye" target="_blank">
+				<svg viewBox="0 0 50 41"><path d="M50,4.82a21.49,21.49,0,0,1-5.14,5.3c0,.3,0,.74,0,1.33a29.13,29.13,0,0,1-1.21,8.23A29.77,29.77,0,0,1,40,27.57a31,31,0,0,1-5.85,6.68A26.09,26.09,0,0,1,26,38.88a30,30,0,0,1-10.25,1.73A28.46,28.46,0,0,1,0,36a21.71,21.71,0,0,0,2.48.13A20.08,20.08,0,0,0,15.2,31.76a10.27,10.27,0,0,1-9.58-7.11,12.87,12.87,0,0,0,1.93.16,10.56,10.56,0,0,0,2.7-.35,10.08,10.08,0,0,1-5.89-3.54A9.9,9.9,0,0,1,2,14.4v-.13a10.14,10.14,0,0,0,4.63,1.3,10.23,10.23,0,0,1-3.33-3.65A10,10,0,0,1,2.1,7,10,10,0,0,1,3.49,1.87a29,29,0,0,0,9.34,7.57,28.54,28.54,0,0,0,11.79,3.16,11.23,11.23,0,0,1-.25-2.35,9.87,9.87,0,0,1,3-7.25,10.27,10.27,0,0,1,14.74.24A20.11,20.11,0,0,0,48.61.76,10,10,0,0,1,44.1,6.41,20.35,20.35,0,0,0,50,4.82Z"/></svg>
+			</a>
+			<a href="https://www.linkedin.com/in/olufemi-oye-1a502454" target="_blank">
+				<svg viewBox="0 0 50 48"><path d="M12,5.57a5.16,5.16,0,0,1-1.64,4A6.14,6.14,0,0,1,6,11.13H5.92a5.87,5.87,0,0,1-4.3-1.6A5.33,5.33,0,0,1,0,5.57a5.24,5.24,0,0,1,1.68-4A6.12,6.12,0,0,1,6.06,0a6,6,0,0,1,4.33,1.58A5.43,5.43,0,0,1,12,5.57Zm-.68,10V47.79H.62V15.53ZM50,29.3V47.79H39.29V30.53A9.42,9.42,0,0,0,38,25.18a4.63,4.63,0,0,0-4.12-1.94,5.26,5.26,0,0,0-3.43,1.12,6.91,6.91,0,0,0-2.07,2.78A7.85,7.85,0,0,0,28,29.78v18H17.28q.06-13,.07-21.06t0-9.63l0-1.56H28v4.69h-.06a14.39,14.39,0,0,1,1.33-1.82A13.89,13.89,0,0,1,31.1,16.7a8.45,8.45,0,0,1,2.83-1.42,13,13,0,0,1,3.73-.5,11.57,11.57,0,0,1,9,3.69Q50,22.17,50,29.3Z"/></svg>
+			</a>
+			<a href="https://medium.com/@olufemi.oye" target="_blank">
+				<svg viewBox="0 0 50 43"><path d="M16.66,8.25V41a2,2,0,0,1-.35,1.19,1.17,1.17,0,0,1-1,.49,2,2,0,0,1-.92-.22l-13-6.5A2.36,2.36,0,0,1,.4,35a2.46,2.46,0,0,1-.4-1.3V1.89a1.6,1.6,0,0,1,.28-1A.94.94,0,0,1,1.09.55,3.22,3.22,0,0,1,2.32,1L16.57,8.11A.22.22,0,0,1,16.66,8.25Zm1.79,2.82,14.9,24.16-14.9-7.42ZM49.92,8.22q0,.08-7.16,11.7l-8.38,13.6L23.49,15.84l9-14.71A1.58,1.58,0,0,1,34,.35a1.6,1.6,0,0,1,.73.17L49.8,8.05A.18.18,0,0,1,49.92,8.22ZM50,11.57V41a1.62,1.62,0,0,1-.39,1.13,1.36,1.36,0,0,1-1.06.43,2.63,2.63,0,0,1-1.31-.36L34.93,36Z"/></svg>
+			</a>
+			<a href="mailto:olufemi.oye@gmail.com" target="_blank">
+				<svg viewBox="0 0 50 40"><path class="cls-1" d="M50,4.82V35.18a4.48,4.48,0,0,1-4.46,4.46H4.46a4.3,4.3,0,0,1-3.15-1.31A4.3,4.3,0,0,1,0,35.18V4.82A4.3,4.3,0,0,1,1.31,1.67,4.3,4.3,0,0,1,4.46.36H45.54a4.3,4.3,0,0,1,3.15,1.31A4.3,4.3,0,0,1,50,4.82Zm-3.57,1V5.17c0-.08,0-.2,0-.36a.76.76,0,0,0-.08-.35l-.15-.25A.52.52,0,0,0,45.93,4a1,1,0,0,0-.39-.07H4.46a.91.91,0,0,0-.89.89,9.77,9.77,0,0,0,4.1,7.92Q13.06,17,18.86,21.59l1,.82q.81.68,1.28,1t1.24.88a7.45,7.45,0,0,0,1.41.77,3.31,3.31,0,0,0,1.2.25H25a3.32,3.32,0,0,0,1.2-.25,7.48,7.48,0,0,0,1.41-.77q.77-.52,1.24-.88t1.28-1l1-.82q5.8-4.6,11.19-8.84a13.1,13.1,0,0,0,2.8-3.22A7,7,0,0,0,46.43,5.85Zm0,29.33V13.75a16.4,16.4,0,0,1-1.93,1.84Q37,21.34,32.62,25q-1.42,1.2-2.32,1.87a12.85,12.85,0,0,1-2.41,1.35,7,7,0,0,1-2.86.68H25a7,7,0,0,1-2.86-.68,12.84,12.84,0,0,1-2.41-1.35q-.89-.67-2.32-1.87Q13,21.34,5.5,15.59a16.33,16.33,0,0,1-1.93-1.84V35.18a.91.91,0,0,0,.89.89H45.54a.91.91,0,0,0,.89-.89Z"/></svg>
+			</a>
+		</div>
+	</div>
+</main>
 </body>
-
 </html>
