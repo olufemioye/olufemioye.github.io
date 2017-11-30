@@ -21,6 +21,7 @@
 		border-radius: 50%;
 		display: inline-block;
 		margin: 0 0 15px;
+		cursor: none;
 	}
 	h1{
 		font-size: 24px;
@@ -29,7 +30,7 @@
 		margin: 0 0 20px;
 	}
 	h1::selection,p::selection{
-		background: #168489;
+		background: rgba(22, 132, 137, 0.75);
 		color: white;
 	}
 	p{
@@ -103,6 +104,10 @@
 		img{
 			height: 110px;
 			width: 110px;
+			transition: .3s;
+		}
+		img:hover{
+			filter: brightness(100%) contrast(90%);
 		}
 	}
 </style>
@@ -114,9 +119,9 @@
 		</span>
 		<h1>Hello, my name is Olufemi Oye, I’m a Frontend Developer based in Lagos.</h1>
 		<p>
-			Designing Interfaces and Writing Code that supports them is my forte’
+			Designing Interfaces and Writing Code that supports them is my forte.
 			<br>
-			A more comprehensive website is in the works :)
+			A more comprehensive website is in the works &#9786;
 			<br><br>
 			You can contact me via <a href="mailto:olufemi.oye@gmail.com" target="_blank" class="mail">e-mail</a>.
 			<br>
